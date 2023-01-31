@@ -1,0 +1,614 @@
+:root {
+    --col-main: #3182d4;
+    --btn-color: #f0e807;
+    --main-white: #fff;
+    --bg-color: #e9f2fc;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+.nav-cnt-0 {
+    /* width: 100vw; */
+    height: 475px;
+    background: url(clg_poster.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-cnt {
+    /* width: 100vw; */
+    height: 475px;
+    background: linear-gradient(to right, rgba(2, 9, 40, 0.764), rgba(5, 15, 56, 0.522), rgba(9, 31, 119, 0.385), rgba(255, 255, 255, 0.014));
+}
+
+.navbar {
+    padding: 0 25px;
+    position: sticky;
+    z-index: 10;
+}
+
+.logo a img {
+    width: 150px;
+    height: 85px;
+}
+.list-item{
+    margin-right: 25px;
+}
+.list-item a {
+    /* margin-right: 25px; */
+    font-size: 20px;
+    color: var(--main-white);
+}
+
+.list-item a:hover {
+    color: var(--col-main);
+
+}
+
+.down-pointing{
+    font-size: 15px;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    top: 65%;
+    /* right: 28%; */
+    padding: 10px 0;
+    background: linear-gradient(to right, #94c7fa, #5397db, #498dd1);
+    border: 1px solid var(--col-main);
+    border-radius: 7px;
+}
+
+.dropdown-item{
+    margin: 5px 8px;
+}
+.all-dropdown{
+    margin: 5px 8px 0;
+    border-top: 1px solid var(--col-main);
+}
+
+
+
+
+.call-cnt {
+    width: 200px;
+}
+
+.call-icon svg {
+    border: 1px solid #504e0e;
+    cursor: pointer;
+
+}
+
+.call-dtl {
+    margin-left: 5px;
+    margin-right: 25px;
+}
+
+.call-dtl p {
+    font-size: 11px;
+    color: var(--main-white);
+}
+
+.call-dtl h5 {
+    font-size: 17px;
+    color: var(--main-white);
+    
+}
+
+
+
+/* blog-Poster */
+.poster-material {
+    margin-top: 65px;
+    height: 213px;
+    /* width: 480px ; */
+}
+
+.p1 {
+    margin-left: 100px;
+    margin-bottom: 5px;
+    color: var(--main-white);
+}
+
+.h21,
+.h22 {
+    margin-left: 100px;
+    font-family: serif;
+    font-size: 50px;
+    line-height: 50px;
+    color: var(--main-white);
+}
+
+.line-1 {
+    margin-top: 5px;
+}
+
+.line {
+    margin: auto 0;
+    width: 95px;
+    background-color: var(--main-white);
+    height: 1px;
+}
+
+.p2 {
+    margin-left: 5px;
+    color: var(--main-white);
+}
+
+.p3 {
+    margin-left: 100px;
+    margin-top: 5px;
+    color: var(--btn-color);
+
+}
+
+.line-2 {
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.btn-box {
+    padding: 1px;
+    border: 2px solid var(--btn-color);
+    margin-right: 10px;
+}
+
+.btn-1 {
+    padding: 5px 15px;
+    background-color: var(--btn-color);
+    color: var(--main-white);
+    outline: none;
+    border: none;
+    font-size: 14px;
+
+}
+
+.btn-2 {
+    padding: 5px 15px;
+    background: none;
+    outline: none;
+    border: 1px solid var(--main-white);
+    color: var(--main-white);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+
+.award-seen {
+    /* width: 100%; */
+    padding: 15px;
+    background-color: var(--bg-color);
+    border-top: 1px solid#dbebfd;
+    border-bottom: 1px solid #dbebfd;
+}
+
+.h31 {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.awards-cnt {
+    margin-right: 10px;
+}
+
+.award {
+    width: 120px;
+    height: 120px;
+    background-color: var(--main-white);
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.award img {
+    width: 120px;
+}
+
+.see-us-cnt {
+    margin-left: 10px;
+}
+
+
+
+.practice-area-cnt {
+    padding: 50px 80px;
+    background-color: var(--main-white);
+}
+
+.h33 {
+    text-align: center;
+    font-family: serif;
+    font-size: 30px;
+
+}
+
+.h33-line {
+    margin:  auto;
+    width: 30px;
+    height: 1px;
+    background-color: #000;
+    border-radius: 5px;
+}
+
+.practice-area-cards {
+    margin-top: 25px;
+}
+
+.ix-defence-card,
+.voilation-card {
+
+    padding: 15px;
+    width: 250px;
+    height: 250px;
+    background-color: var(--bg-color);
+
+
+}
+
+.sheld-logo-cnt,
+.law-book-logo-cnt {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.sheld-logo,
+.law-book-logo {
+    width: 60px;
+    height: 60px;
+
+}
+
+.h23,
+.h24 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.h24 {
+    margin-bottom: 5px;
+}
+
+.p4 {
+    /* margin: auto 15px; */
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.academic-integrity-card {
+    width: 275px;
+    height: 275px;
+    padding: 15px;
+    background: linear-gradient(to right, #94c7fa, #5397db, #498dd1);
+    border: 1px solid #4ca4fc;
+    border-radius: 10px;
+}
+
+.cap-logo-cnt {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cap-logo {
+    width: 70px;
+    height: 70px;
+}
+
+.h25,
+.h26 {
+    font-size: 20px;
+    text-align: center;
+    color: var(--main-white);
+}
+
+.h26 {
+    margin-bottom: 5px;
+}
+
+.p5 {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--main-white);
+}
+
+.learnmore-btn{
+    margin-top: 5px;
+    font-size: 14px; 
+    color: var(--col-main);
+    text-align: center;
+    cursor: pointer;
+}
+.academic-integrity-card #academicIntegrity_btn{
+color: var(--main-white);
+}
+
+
+
+
+
+.testimoniyal-cnt {
+    padding-top: 45px;
+    
+    background: linear-gradient(to right, #94c7fa, #5397db, #498dd1);
+}
+
+
+.h27 {
+    color: var(--main-white);
+    font-family: serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.h27-line {
+    margin:  auto;
+    width: 30px;
+    height: 1px;
+    background-color: var(--main-white);
+
+}
+
+
+/* carousel */
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #e3f2fd; */
+}
+
+.testimonial {
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    /* padding: 0 0 20px 0; */
+    overflow: hidden;
+}
+
+.image {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+    height: 100%;
+    width: 100%;
+}
+
+.slide p {
+    width: 400px;
+    text-align: center;
+    padding: 0  60px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--main-white);
+}
+
+.quote-icon {
+    font-size: 50px;
+    color: #3d8edf;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--main-white);
+}
+
+.job {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--main-white);
+}
+
+/* swiper button css */
+.nav-btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    /* transform: translateY(30px); */
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    transition: 0.2s;
+}
+
+.nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.nav-btn::after,
+.nav-btn::before {
+    font-size: 20px;
+    color: #fff;
+}
+
+.swiper-pagination-bullet {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #4070f4;
+}
+
+@media screen and (max-width: 768px) {
+    .slide p {
+        padding: 0 20px;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+}
+
+.container-1{
+    margin-top: 40px;
+}
+.frequ-ask-que-cnt{
+    max-width: 500px;
+    margin-right: 15px;
+}
+.frequ-ask-que-cnt h2{
+    font-size: 30px;
+    font-family: serif;
+}
+
+.question-cnt{
+    margin-top: 20px;
+}
+.question{
+    font-size: 20px;
+    font-weight: 700;
+}
+.frequ-ask-poster img{
+    width: 350px;
+    height: 450px;
+}
+
+.show-all-question{
+    margin: 5px 0 0 0 ;
+    color: var(--col-main);
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+/* FOOTER */
+
+.foot{
+    margin-top: 15px;
+    padding-top: 20px ;
+    background-color: rgb(11, 5, 44);
+}
+.foot-logo img{
+    width: 150px;
+}
+
+.foot-facilities{
+    margin-left: 50px;
+    flex-direction: column;
+}
+.h41{
+    color: var(--bg-color);
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: 400;
+
+}
+
+.facility{
+    color: var(--bg-color);
+    font-size: 13px;
+    font-weight: 100;
+}
+.all-facility{
+    color: var(--col-main);
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.foot-address{
+    width: 370px;
+    margin-left: 50px;
+}
+.postal-address{
+    color: var(--bg-color);
+    font-size: 13px;
+    font-weight: 100;
+}
+.phone-num{
+    color: var(--bg-color);
+    margin: 5px 0;
+    font-size: 17px;
+    font-weight:500;
+}
+.mail{
+    color: var(--bg-color);
+    font-size: 13px;
+    font-weight: 100;
+}
+
+.foot-question{
+    margin-left: 50px;
+}
+.foot-text-area{
+    background: none;
+    outline: none;
+    border: 1px solid var(--bg-color);
+    width: 200px;
+    padding: 3px 8px;
+    color: var(--bg-color);
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+.btn-box-2 {
+    padding: 1px;
+    border: 2px solid var(--btn-color);
+}
+.btn-post-q{
+    padding: 1px 20px;
+    background-color: var(--btn-color);
+    color: var(--bg-color);
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-stretch: ultra-expanded;
+}
+
+
+.footer{
+    border-top: 1px solid rgb(43, 43, 43);
+    padding: 7px 0;
+    margin-top: 7px;
+}
+.footer p{
+    color: var(--bg-color);
+    font-size: 14px;
+    font-weight: 100;
+    margin: 0 10px;
+}
