@@ -1,7 +1,6 @@
 
 
-alert("this webpage is only for practice purpose...dont teke seriously...  ")
-
+alert("this webpage is only for practice purpose...dont teke seriously... And last this page isn't complete for short screen devices for better experience open this page on laptop or desktop ")
 
 
 
