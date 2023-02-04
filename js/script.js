@@ -1,7 +1,17 @@
 
 
-alert("this webpage is only for practice purpose...dont teke seriously... And last this page isn't complete for short screen devices for better experience open this page on laptop or desktop ")
+// alert("this webpage is only for practice purpose...dont teke seriously... this page is not compleat for short screen devices, for better experience open this page on laptop or desktop ")
 
+// loader
+ 
+function show_loader() {
+  setInterval(
+    function () {
+      document.getElementById("loader").style.display = "none";
+    },
+    3000
+  )
+}
 
 
 

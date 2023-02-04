@@ -36,7 +36,6 @@ body{
     margin-right: 25px;
 }
 .list-item a {
-    /* margin-right: 25px; */
     font-size: 20px;
     color: var(--main-white);
 }
@@ -84,7 +83,6 @@ body{
 
 .call-dtl {
     margin-left: 5px;
-    margin-right: 25px;
 }
 
 .call-dtl p {
@@ -212,6 +210,7 @@ body{
 .see-us-cnt {
     margin-left: 10px;
 }
+
 
 
 
@@ -440,9 +439,9 @@ color: var(--main-white);
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    /* transform: translateY(30px); */
+    transform: translateY(30px);
     /* background-color: rgba(0, 0, 0, 0.1); */
-    transition: 0.2s;
+    /* transition: 0.2s; */
 }
 
 .nav-btn:hover {
@@ -472,6 +471,9 @@ color: var(--main-white);
         display: none;
     }
 }
+
+
+
 
 .container-1{
     margin-top: 40px;

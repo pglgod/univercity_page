@@ -1,342 +1,478 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="img/vits logo.png" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="img/vits logo.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>vits</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/utility.css">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/loader.css" />
+    <link rel="stylesheet" href="css/utility.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responcive.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
+  <body onload="show_loader()">
 
-<body>
+
+    <!-- loader -->
+    <div class="loader" id="loader">
+        <div class="three-body">
+          <div class="three-body__dot"></div>
+          <div class="three-body__dot"></div>
+          <div class="three-body__dot"></div>
+        </div>
+      </div>
+  
+
 
     <div class="nav-cnt-0">
-        <div class="nav-cnt">
+      <div class="nav-cnt">
+        <nav class="navbar flex align-center j-co-sb">
+          <div class="logo">
+            <a href="index.html"><img src="img/vits logo.png" alt="" /></a>
+          </div>
+          <div class="menu-item flex align-center">
+            <ul class="list-items flex">
+              <li class="list-item">
+                <a href="#" style="color: #3182d4">Home</a>
+              </li>
+              <li class="list-item"><a href="#">Admission</a></li>
+              <li class="list-item">
+                <a
+                  href="#"
+                  role="button"
+                  class="dropdown-btn"
+                  onclick="show_dropdown()"
+                  >Courses<span class="down-pointing" id="down_pointing"
+                    >&#x25BC;
+                  </span></a
+                >
+                <ul
+                  class="dropdown"
+                  id="dropdown_1"
+                  onmouseenter="show_dropdown()"
+                  onmouseleave="hide_dropdown()"
+                >
+                  <li class="dropdown-item"><a href="#">B.tech</a></li>
+                  <li class="dropdown-item"><a href="#">M.tech</a></li>
+                  <li class="dropdown-item"><a href="#">B.ca</a></li>
+                  <li class="dropdown-item"><a href="#">M.ca</a></li>
+                  <li class="dropdown-item"><a href="#">polytechnic</a></li>
+                  <li class="all-dropdown"><a href="#">Show all..</a></li>
+                </ul>
+              </li>
+              <li class="list-item"><a href="#">Placement</a></li>
+              <li class="list-item"><a href="#">About</a></li>
+            </ul>
 
-            <nav class="navbar flex align-center j-co-sb">
-                <div class="logo"><a href="index.html"><img src="img/vits logo.png" alt=""></a></div>
-                <div class="menu-item flex align-center">
-                    <ul class="list-items flex">
-                        <li class="list-item"><a href="#" style="color: #3182d4;">Home</a></li>
-                        <li class="list-item"><a href="#">Admission</a></li>
-                        <li class="list-item">
-                            <a href="#" role="button" class="dropdown-btn" onclick="show_dropdown()">Courses<span class="down-pointing" id="down_pointing">&#x25BC; </span></a>
-                            <ul class="dropdown" id="dropdown_1" onmouseenter="show_dropdown()" onmouseleave="hide_dropdown()">
-                                <li class="dropdown-item"><a href="#">B.tech</a></li>
-                                <li class="dropdown-item"><a href="#">M.tech</a></li>
-                                <li class="dropdown-item"><a href="#">B.ca</a></li>
-                                <li class="dropdown-item"><a href="#">M.ca</a></li>
-                                <li class="dropdown-item"><a href="#">polytechnic</a></li>
-                                <li class="all-dropdown"><a href="#">Show all..</a></li>
-                            </ul>
-
-                        </li>
-                        <li class="list-item"><a href="#">Placement</a></li>
-                        <li class="list-item"><a href="#">About</a></li>
-                    </ul>
-
-                    <div class="call-cnt flex">
-                        <div class="call-icon">
-                            <svg width="35px" height="35px" viewBox="0 0 24 24" id="call"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect id="Rectangle_4" data-name="Rectangle 4" width="50px" height="50px"
-                                    fill="#f0e807" />
-                                <path id="Shape"
-                                    d="M7.02,15.976,5.746,13.381a.7.7,0,0,0-.579-.407l-1.032-.056a.662.662,0,0,1-.579-.437,9.327,9.327,0,0,1,0-6.5.662.662,0,0,1,.579-.437l1.032-.109a.7.7,0,0,0,.589-.394L7.03,2.446l.331-.662a.708.708,0,0,0,.07-.308.692.692,0,0,0-.179-.467A3,3,0,0,0,4.693.017l-.235.03L4.336.063A1.556,1.556,0,0,0,4.17.089l-.162.04C1.857.679.165,4.207,0,8.585V9.83c.165,4.372,1.857,7.9,4,8.483l.162.04a1.556,1.556,0,0,0,.165.026l.122.017.235.03a3,3,0,0,0,2.558-.993.692.692,0,0,0,.179-.467.708.708,0,0,0-.07-.308Z"
-                                    transform="translate(3.887 6.093) rotate(-30)" fill="#fff" stroke=""
-                                    stroke-miterlimit="10" stroke-width="1.5" />
-                            </svg>
-                        </div>
-                        <div class="call-dtl">
-                            <p>Call us toll free:</p>
-                            <h5>123-456-7890</h5>
-                        </div>
-                    </div>
-
-                </div>
-            </nav>
-
-            <div class="poster-material">
-                <p class="p1">Don't Let One Mistake</p>
-                <h2 class="h21">Jeopardize</h2>
-                <h2 class="h22">Your Future</h2>
-                <div class=" line-1 flex">
-                    <div class="line"></div>
-                    <p class="p2">Aggrassively Defending Collage Students Accused of</p>
-                </div>
-                <p class="p3">Title IX And Acadamic Miscunduct</p>
-                <div class="line-2 flex">
-                    <div class="btn-box"> <button class="btn-1">FREE CONSULTATION</button> </div>
-                    <button class="btn-2">LEARN MORE...</button>
-                </div>
-
+            <div class="call-cnt flex">
+              <div class="call-icon">
+                <svg
+                  width="35px"
+                  height="35px"
+                  viewBox="0 0 24 24"
+                  id="call"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    id="Rectangle_4"
+                    data-name="Rectangle 4"
+                    width="50px"
+                    height="50px"
+                    fill="#f0e807"
+                  />
+                  <path
+                    id="Shape"
+                    d="M7.02,15.976,5.746,13.381a.7.7,0,0,0-.579-.407l-1.032-.056a.662.662,0,0,1-.579-.437,9.327,9.327,0,0,1,0-6.5.662.662,0,0,1,.579-.437l1.032-.109a.7.7,0,0,0,.589-.394L7.03,2.446l.331-.662a.708.708,0,0,0,.07-.308.692.692,0,0,0-.179-.467A3,3,0,0,0,4.693.017l-.235.03L4.336.063A1.556,1.556,0,0,0,4.17.089l-.162.04C1.857.679.165,4.207,0,8.585V9.83c.165,4.372,1.857,7.9,4,8.483l.162.04a1.556,1.556,0,0,0,.165.026l.122.017.235.03a3,3,0,0,0,2.558-.993.692.692,0,0,0,.179-.467.708.708,0,0,0-.07-.308Z"
+                    transform="translate(3.887 6.093) rotate(-30)"
+                    fill="#fff"
+                    stroke=""
+                    stroke-miterlimit="10"
+                    stroke-width="1.5"
+                  />
+                </svg>
+              </div>
+              <div class="call-dtl">
+                <p>Call us toll free:</p>
+                <h5>123-456-7890</h5>
+              </div>
             </div>
+          </div>
+        </nav>
 
+        <div class="poster-material">
+          <p class="p1">Don't Let One Mistake</p>
+          <h2 class="h21">Jeopardize</h2>
+          <h2 class="h22">Your Future</h2>
+          <div class="line-1 flex">
+            <div class="line"></div>
+            <p class="p2">Aggrassively Defending Collage Students Accused of</p>
+          </div>
+          <p class="p3">Title IX And Acadamic Miscunduct</p>
+          <div class="line-2 flex">
+            <div class="btn-box">
+              <button class="btn-1">FREE CONSULTATION</button>
+            </div>
+            <button class="btn-2">LEARN MORE...</button>
+          </div>
         </div>
+      </div>
     </div>
 
     <div class="award-seen flex j-co-center">
-        <div class="awards-cnt">
-            <h3 class="h31">managing Groups :</h3>
-            <div class="Awards flex align-center">
-                <div class="award"><img src="img/vits-dpr.png" alt=""></div>
-                <div class="award"><img src="img/vims logo.png" alt=""></div>
-                <div class="award"><img src="img/vimr logo.png" alt=""></div>
-                <div class="award"><img src="img/CC-logo.png" alt=""></div>
-            </div>
+      <div class="awards-cnt">
+        <h3 class="h31">managing Groups :</h3>
+        <div class="Awards flex align-center">
+          <div class="award"><img src="img/vits-dpr.png" alt="" /></div>
+          <div class="award"><img src="img/vims logo.png" alt="" /></div>
+          <div class="award"><img src="img/vimr logo.png" alt="" /></div>
+          <div class="award"><img src="img/CC-logo.png" alt="" /></div>
         </div>
-
+      </div>
     </div>
 
     <div class="practice-area-cnt">
-        <h3 class="h33">Practice Areas</h3>
-        <div class="h33-line"></div>
-        <div class="practice-area-cards flex j-co-center align-center">
-            <div class="ix-defence-card">
-                <div class="sheld-logo-cnt">
-                    <img class="sheld-logo" src="img/sheld.png" alt="">
-                </div>
-                <h2 class="h23">IX Defence for</h2>
-                <h2 class="h24">Students</h2>
-                <p class="p4">It’s a federal law that
-                    prohibits against discrimination based on a student’s gender.
-                </p>
-                <div class="learnmore-btn" id="IxDefnceBtn" role="button">Learn more &#8594;</div>
-            </div>
-            <div class="academic-integrity-card">
-                <div class="cap-logo-cnt">
-                    <img class="cap-logo" src="img/univercity cap.png" alt="">
-                </div>
-                <h2 class="h25">Academic integrity</h2>
-                <h2 class="h26">& Misconduct</h2>
-                <p class="p5">Academic dishonesty, academic misconduct, academic fraud and academic integrity.
-                </p>
-                <div class="learnmore-btn" id="academicIntegrity_btn" role="button">Learn more &#8594;</div>
-            </div>
-            <div class="voilation-card">
-                <div class="law-book-logo-cnt">
-                    <img class="law-book-logo" src="img/law book.png" alt="">
-                </div>
-                <h2 class="h23">Code of conduct</h2>
-                <h2 class="h24">Voilation</h2>
-                <p class="p4">Any form of reprisal against persons who, in good faith, report violations of the Code.
-                </p>
-                <div class="learnmore-btn" id="codeOfConducts_btn" role="button">Learn more &#8594;</div>
-            </div>
+      <h3 class="h33">Practice Areas</h3>
+      <div class="h33-line"></div>
+      <div class="practice-area-cards flex j-co-center align-center">
+        <div class="ix-defence-card">
+          <div class="sheld-logo-cnt">
+            <img class="sheld-logo" src="img/sheld.png" alt="" />
+          </div>
+          <h2 class="h23">IX Defence for</h2>
+          <h2 class="h24">Students</h2>
+          <p class="p4">
+            It’s a federal law that prohibits against discrimination based on a
+            student’s gender.
+          </p>
+          <div class="learnmore-btn" id="IxDefnceBtn" role="button">
+            Learn more &#8594;
+          </div>
         </div>
-
+        <div class="academic-integrity-card">
+          <div class="cap-logo-cnt">
+            <img class="cap-logo" src="img/univercity cap.png" alt="" />
+          </div>
+          <h2 class="h25">Academic integrity</h2>
+          <h2 class="h26">& Misconduct</h2>
+          <p class="p5">
+            Academic dishonesty, academic misconduct, academic fraud and
+            academic integrity.
+          </p>
+          <div class="learnmore-btn" id="academicIntegrity_btn" role="button">
+            Learn more &#8594;
+          </div>
+        </div>
+        <div class="voilation-card">
+          <div class="law-book-logo-cnt">
+            <img class="law-book-logo" src="img/law book.png" alt="" />
+          </div>
+          <h2 class="h23">Code of conduct</h2>
+          <h2 class="h24">Voilation</h2>
+          <p class="p4">
+            Any form of reprisal against persons who, in good faith, report
+            violations of the Code.
+          </p>
+          <div class="learnmore-btn" id="codeOfConducts_btn" role="button">
+            Learn more &#8594;
+          </div>
+        </div>
+      </div>
     </div>
     <div class="testimoniyal-cnt">
-        <h2 class="h27">Clint Testimoniyal</h2>
-        <div class="h27-line"></div>
+      <h2 class="h27">Clint Testimoniyal</h2>
+      <div class="h27-line"></div>
 
-        <div class="clints">
-
-            <section class="container">
-                <div class="testimonial mySwiper swiper-initialized swiper-horizontal swiper-backface-hidden">
-                    <div class="testi-content swiper-wrapper" id="swiper-wrapper-07300fdce95acfd2" aria-live="polite"
-                        style="transition-duration: 0ms; transform: translate3d(-900px, 0px, 0px);">
-
-                        <div class="slide swiper-slide swiper-slide-duplicate swiper-slide-prev"
-                            data-swiper-slide-index="3" role="group" aria-label="3 / 3" style="width: 900px;">
-                            <div class="clint">
-                                <img src="images/img3.jpg" alt="" class="image">
-                                <div class="details">
-                                    <span class="name">Estelle Morgan</span>
-                                    <span class="job">Web Developer</span>
-                                </div>
-                            </div>
-                            <p>
-                                <i class="bx bxs-quote-alt-left quote-icon"></i>Estelle Morgan BA is a Welsh theatre and
-                                film actress. Morgan studied acting at The Royal Scottish Academy of Music and Drama,
-                                graduating with the prestigious James Bridie Gold Medal.
-                            </p>
-
-
-                        </div>
-                        <div class="slide swiper-slide swiper-slide-active" data-swiper-slide-index="0" role="group"
-                            aria-label="1 / 3" style="width: 900px;">
-                            <div class="clint">
-                                <img src="images/img1.jpg" alt="" class="image">
-                                <div class="details">
-                                    <span class="name">Emma Watson</span>
-                                    <span class="job">Actress</span>
-                                </div>
-                            </div>
-                            <p>
-                                <i class="bx bxs-quote-alt-left quote-icon"></i>Emma Charlotte Duerre Watson is an
-                                English actress and activist. Known for her roles in both blockbusters and independent
-                                films, as well as for her women's rights work.
-                            </p>
-                        </div>
-
-                        <div class="slide swiper-slide swiper-slide-next" data-swiper-slide-index="1" role="group"
-                            aria-label="2 / 3" style="width: 900px;">
-                            <div class="clint">
-                                <img src="images/img2.jpg" alt="" class="image">
-                                <div class="details">
-                                    <span class="name">Ben Smith</span>
-                                    <span class="job">Data Scientist</span>
-                                </div>
-                            </div>
-                            <p>
-                                <i class="bx bxs-quote-alt-left quote-icon"></i>Benjamin Seth Smith is a New Zealand
-                                first-class cricketer who plays for Central Districts. In June 2018, he was awarded a
-                                contract with Central Districts for the 2018–19 season.
-                            </p>
-                        </div>
-
-                        <div class="slide swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="2"
-                            role="group" aria-label="3 / 3" style="width: 900px;">
-                            <div class="clint">
-                                <img src="images/img3.jpg" alt="" class="image">
-                                <div class="details">
-                                    <span class="name">Ethan Marcotte</span>
-                                    <span class="job">Web Developer</span>
-                                </div>
-                            </div>
-                            <p>
-                                <i class="bx bxs-quote-alt-left quote-icon"></i>If there's one man in the web industry
-                                who probably doesn't need an introduction, it's Ethan Marcotte. One of the web's
-                                best-known designers, Marcotte is a regular and popular speaker on the conference
-                                circuit
-                            </p>
-                        </div>
-
-                    </div>
-
-                    <div class="swiper-button-next nav-btn" tabindex="0" role="button" aria-label="Next slide"
-                        aria-controls="swiper-wrapper-07300fdce95acfd2"></div>
-                    <div class="swiper-button-prev nav-btn" tabindex="0" role="button" aria-label="Previous slide"
-                        aria-controls="swiper-wrapper-07300fdce95acfd2"></div>
-                    <div
-                        class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
-                        <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0"
-                            role="button" aria-label="Go to slide 1" aria-current="true"></span>
-                        <span class="swiper-pagination-bullet" tabindex="0" role="button"
-                            aria-label="Go to slide 2"></span>
-                        <span class="swiper-pagination-bullet" tabindex="0" role="button"
-                            aria-label="Go to slide 3"></span>
-                    </div>
-                    <!-- <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span> -->
+      <div class="clints">
+        <section class="container">
+          <div
+            class="testimonial mySwiper swiper-initialized swiper-horizontal swiper-backface-hidden"
+          >
+            <div
+              class="testi-content swiper-wrapper"
+              id="swiper-wrapper-07300fdce95acfd2"
+              aria-live="polite"
+              style="
+                transition-duration: 0ms;
+                transform: translate3d(-900px, 0px, 0px);
+              "
+            >
+              <div
+                class="slide swiper-slide swiper-slide-duplicate swiper-slide-prev"
+                data-swiper-slide-index="3"
+                role="group"
+                aria-label="3 / 3"
+                style="width: 900px"
+              >
+                <div class="clint">
+                  <img src="images/img3.jpg" alt="" class="image" />
+                  <div class="details">
+                    <span class="name">Estelle Morgan</span>
+                    <span class="job">Web Developer</span>
+                  </div>
                 </div>
-            </section>
-
-        </div>
-    </div>
-
-    <div class="container-1 flex  j-co-center">
-        <div class="frequ-ask-que-cnt">
-            <h2>Frequently Asked</h2>
-            <h2>Question's</h2>
-            <div class="question-cnt">
-                <p class="question">what's the fee structur?</p>
-                <p class="answer">The fee range between INR 20,000 to INR 90,000 depending uponthe choice of your
-                    course. Check here for <a href="#">VITS Satna : course & fees details.</a></p>
-                <p class="question">Dose VITS Collage provide placements?</p>
-                <p class="answer">VITS Collage is a best collage in satna. Almost 25% of the students got plased via
-                    campus and other do a higher study or prepared for thir dream job.</p>
-                <p class="question">Whats tranding on Vindhya Institute Of Technology & Science,(VITS Satna)?</p>
-                <p class="answer">Populer exames, Collage programs & Specializations are identifiend using the student.
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon"></i>Estelle Morgan
+                  BA is a Welsh theatre and film actress. Morgan studied acting
+                  at The Royal Scottish Academy of Music and Drama, graduating
+                  with the prestigious James Bridie Gold Medal.
                 </p>
-                <p href="#" class="show-all-question" onclick="" role="button">Show all...</p>
-            </div>
-        </div>
-        <div class="frequ-ask-poster flex align-center">
-            <img src="https://images.pexels.com/photos/2773538/pexels-photo-2773538.jpeg?cs=srgb&dl=pexels-cottonbro-studio-2773538.jpg&fm=jpg"
-                alt="">
+              </div>
+              <div
+                class="slide swiper-slide swiper-slide-active"
+                data-swiper-slide-index="0"
+                role="group"
+                aria-label="1 / 3"
+                style="width: 900px"
+              >
+                <div class="clint">
+                  <img src="images/img1.jpg" alt="" class="image" />
+                  <div class="details">
+                    <span class="name">Emma Watson</span>
+                    <span class="job">Actress</span>
+                  </div>
+                </div>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon"></i>Emma Charlotte
+                  Duerre Watson is an English actress and activist. Known for
+                  her roles in both blockbusters and independent films, as well
+                  as for her women's rights work.
+                </p>
+              </div>
 
-        </div>
+              <div
+                class="slide swiper-slide swiper-slide-next"
+                data-swiper-slide-index="1"
+                role="group"
+                aria-label="2 / 3"
+                style="width: 900px"
+              >
+                <div class="clint">
+                  <img src="images/img2.jpg" alt="" class="image" />
+                  <div class="details">
+                    <span class="name">Ben Smith</span>
+                    <span class="job">Data Scientist</span>
+                  </div>
+                </div>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon"></i>Benjamin Seth
+                  Smith is a New Zealand first-class cricketer who plays for
+                  Central Districts. In June 2018, he was awarded a contract
+                  with Central Districts for the 2018–19 season.
+                </p>
+              </div>
+
+              <div
+                class="slide swiper-slide swiper-slide-duplicate-prev"
+                data-swiper-slide-index="2"
+                role="group"
+                aria-label="3 / 3"
+                style="width: 900px"
+              >
+                <div class="clint">
+                  <img src="images/img3.jpg" alt="" class="image" />
+                  <div class="details">
+                    <span class="name">Ethan Marcotte</span>
+                    <span class="job">Web Developer</span>
+                  </div>
+                </div>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon"></i>If there's one
+                  man in the web industry who probably doesn't need an
+                  introduction, it's Ethan Marcotte. One of the web's best-known
+                  designers, Marcotte is a regular and popular speaker on the
+                  conference circuit
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="swiper-button-next nav-btn"
+              tabindex="0"
+              role="button"
+              aria-label="Next slide"
+              aria-controls="swiper-wrapper-07300fdce95acfd2"
+            ></div>
+            <div
+              class="swiper-button-prev nav-btn"
+              tabindex="0"
+              role="button"
+              aria-label="Previous slide"
+              aria-controls="swiper-wrapper-07300fdce95acfd2"
+            ></div>
+            <div
+              class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"
+            >
+              <span
+                class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                tabindex="0"
+                role="button"
+                aria-label="Go to slide 1"
+                aria-current="true"
+              ></span>
+              <span
+                class="swiper-pagination-bullet"
+                tabindex="0"
+                role="button"
+                aria-label="Go to slide 2"
+              ></span>
+              <span
+                class="swiper-pagination-bullet"
+                tabindex="0"
+                role="button"
+                aria-label="Go to slide 3"
+              ></span>
+            </div>
+            <!-- <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span> -->
+          </div>
+        </section>
+      </div>
     </div>
 
+    <div class="container-1 flex j-co-center">
+      <div class="frequ-ask-que-cnt">
+        <h2>Frequently Asked</h2>
+        <h2>Question's</h2>
+        <div class="question-cnt">
+          <p class="question">what's the fee structur?</p>
+          <p class="answer">
+            The fee range between INR 20,000 to INR 90,000 depending uponthe
+            choice of your course. Check here for
+            <a href="#">VITS Satna : course & fees details.</a>
+          </p>
+          <p class="question">Dose VITS Collage provide placements?</p>
+          <p class="answer">
+            VITS Collage is a best collage in satna. Almost 25% of the students
+            got plased via campus and other do a higher study or prepared for
+            thir dream job.
+          </p>
+          <p class="question">
+            Whats tranding on Vindhya Institute Of Technology & Science,(VITS
+            Satna)?
+          </p>
+          <p class="answer">
+            Populer exames, Collage programs & Specializations are identifiend
+            using the student.
+          </p>
+          <p href="#" class="show-all-question" onclick="" role="button">
+            Show all...
+          </p>
+        </div>
+      </div>
+      <div class="frequ-ask-poster flex align-center">
+        <img
+          src="https://images.pexels.com/photos/2773538/pexels-photo-2773538.jpeg?cs=srgb&dl=pexels-cottonbro-studio-2773538.jpg&fm=jpg"
+          alt=""
+        />
+      </div>
+    </div>
 
     <footer class="foot">
-        <div class="foot-content flex j-co-center">
-            <div class="foot-logo"><img src="img/vits logo.png" alt=""></div>
-            <div class="foot-facilities flex">
-                <h4 class="h41">FACILITY</h4>
-                <a href="#" class="facility">Indoor Canteen</a>
-                <a href="#" class="facility">Indoor Stationary</a>
-                <a href="#" class="facility">Boys Hostal</a>
-                <a href="#" class="facility">Indoor sports area</a>
-                <a class="all-facility" href="#">Show all..</a>
-            </div>
-
-            <div class="foot-address">
-                <h4 class="h41">GET IN TOUCH</h4>
-                <a href="" class="postal-address" onclick="open_map() ">Vindhya Institute of Technology
-                    and Science Karhi Road, Amoudha, Satna, Madhya
-                    Pradesh 485002</a>
-                <p class="phone-num">012-345-6789</p>
-                <p class="mail">vits@gmail.com</p>
-            </div>
-
-            <div class="foot-question">
-                <h4 class="h41">ASK FOR YOU CARREAR</h4>
-                <input type="text" name="" id="#" class="foot-text-area" placeholder="drop your question..">
-                <div class="flex">
-                    <div class="btn-box-2 "> <button class="btn-post-q">Post</button></div>
-                </div>
-
-            </div>
+      <div class="foot-content flex j-co-center">
+        <div class="foot-logo"><img src="img/vits logo.png" alt="" /></div>
+        <div class="foot-facilities flex">
+          <h4 class="h41">FACILITY</h4>
+          <a href="#" class="facility">Indoor Canteen</a>
+          <a href="#" class="facility">Indoor Stationary</a>
+          <a href="#" class="facility">Boys Hostal</a>
+          <a href="#" class="facility">Indoor sports area</a>
+          <a class="all-facility" href="#">Show all..</a>
         </div>
 
-        <div class="footer flex j-co-center">
-            <p>&copy;2023 All Right Reserved</p>
-            <p>||</p>
-            <p>Developed by PglGod</p>
+        <div class="foot-address">
+          <h4 class="h41">GET IN TOUCH</h4>
+          <a href="" class="postal-address" onclick="open_map() "
+            >Vindhya Institute of Technology and Science Karhi Road, Amoudha,
+            Satna, Madhya Pradesh 485002</a
+          >
+          <p class="phone-num">012-345-6789</p>
+          <p class="mail">vits@gmail.com</p>
         </div>
 
+        <div class="foot-question">
+          <h4 class="h41">ASK FOR YOU CARREAR</h4>
+          <input
+            type="text"
+            name=""
+            id="#"
+            class="foot-text-area"
+            placeholder="drop your question.."
+          />
+          <div class="flex">
+            <div class="btn-box-2">
+              <button class="btn-post-q">Post</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer flex j-co-center">
+        <p>&copy;2023 All Right Reserved</p>
+        <p>||</p>
+        <p>Developed by PglGod</p>
+      </div>
     </footer>
 
     <!-- javascript -->
     <script src="js/script.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+  </body>
 
-</body>
-
-<script>
+  <script>
     // <![CDATA[  <-- For SVG support
-    if ('WebSocket' in window) {
-        (function () {
-            function refreshCSS() {
-                var sheets = [].slice.call(document.getElementsByTagName("link"));
-                var head = document.getElementsByTagName("head")[0];
-                for (var i = 0; i < sheets.length; ++i) {
-                    var elem = sheets[i];
-                    var parent = elem.parentElement || head;
-                    parent.removeChild(elem);
-                    var rel = elem.rel;
-                    if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-                        var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                        elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-                    }
-                    parent.appendChild(elem);
-                }
+    if ("WebSocket" in window) {
+      (function () {
+        function refreshCSS() {
+          var sheets = [].slice.call(document.getElementsByTagName("link"));
+          var head = document.getElementsByTagName("head")[0];
+          for (var i = 0; i < sheets.length; ++i) {
+            var elem = sheets[i];
+            var parent = elem.parentElement || head;
+            parent.removeChild(elem);
+            var rel = elem.rel;
+            if (
+              (elem.href && typeof rel != "string") ||
+              rel.length == 0 ||
+              rel.toLowerCase() == "stylesheet"
+            ) {
+              var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+              elem.href =
+                url +
+                (url.indexOf("?") >= 0 ? "&" : "?") +
+                "_cacheOverride=" +
+                new Date().valueOf();
             }
-            var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-            var address = protocol + window.location.host + window.location.pathname + '/ws';
-            var socket = new WebSocket(address);
-            socket.onmessage = function (msg) {
-                if (msg.data == 'reload') window.location.reload();
-                else if (msg.data == 'refreshcss') refreshCSS();
-            };
-            if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                console.log('Live reload enabled.');
-                sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-            }
-        })();
+            parent.appendChild(elem);
+          }
+        }
+        var protocol =
+          window.location.protocol === "http:" ? "ws://" : "wss://";
+        var address =
+          protocol + window.location.host + window.location.pathname + "/ws";
+        var socket = new WebSocket(address);
+        socket.onmessage = function (msg) {
+          if (msg.data == "reload") window.location.reload();
+          else if (msg.data == "refreshcss") refreshCSS();
+        };
+        if (
+          sessionStorage &&
+          !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+        ) {
+          console.log("Live reload enabled.");
+          sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
+        }
+      })();
+    } else {
+      console.error(
+        "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+      );
     }
-    else {
-        console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-    }
-	// ]]>
-</script>
-
+    // ]]>
+  </script>
 </html>
