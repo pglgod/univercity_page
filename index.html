@@ -99,8 +99,52 @@
                 <h5>123-456-7890</h5>
               </div>
             </div>
+
+            <label for="burger" class="burger" id="burger_lable">
+              <input
+                id="burger"
+                type="checkbox"
+                onclick="showHamburgerMenu()"
+              />
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
           </div>
         </nav>
+        <div class="hamburger-munu-cnt" id="hamburger-manu">
+          <div class="cl-burger-cnt flex">
+            <label for="cl-burger" class="burger-close">
+              <input
+                id="cl-burger"
+                type="checkbox"
+                onclick="hideHamburgerMenu()"
+              />
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+          </div>
+          <ul class="burger-list-items">
+            <li class="list-item">
+              <a href="#" style="color: #3182d4">Home</a>
+            </li>
+            <li class="list-item"><a href="#">Admission</a></li>
+            <li class="list-item">
+              <a role="button" class="dropdown-btn" >Courses</a>
+              <ul class="hamburger-dropdown">
+                <li class="dropdown-item"><a href="#">B.tech</a></li>
+                <li class="dropdown-item"><a href="#">M.tech</a></li>
+                <li class="dropdown-item"><a href="#">B.ca</a></li>
+                <li class="dropdown-item"><a href="#">M.ca</a></li>
+                <li class="dropdown-item"><a href="#">polytechnic</a></li>
+                <li class="all-dropdown"><a href="#">Show all..</a></li>
+              </ul>
+            </li>
+            <li class="list-item"><a href="#">Placement</a></li>
+            <li class="list-item"><a href="#">About</a></li>
+          </ul>
+        </div>
 
         <div class="poster-material">
           <p class="p1">Don't Let One Mistake</p>
@@ -331,7 +375,7 @@
       </div>
     </div>
 
-    <div class="container-1 flex j-co-center">
+    <div class="container-1 flex j-co-center align-center">
       <div class="frequ-ask-que-cnt">
         <h2>Frequently Asked</h2>
         <h2>Question's</h2>
@@ -371,7 +415,9 @@
 
     <footer class="foot">
       <div class="foot-content flex j-co-center">
-        <div class="foot-logo"><img src="img/vits logo.png" alt="" /></div>
+        <div class="foot-logo flex align-center j-co-center">
+          <img src="img/vits logo.png" alt="" />
+        </div>
         <div class="foot-facilities flex">
           <h4 class="h41">FACILITY</h4>
           <a href="#" class="facility">Indoor Canteen</a>
@@ -392,7 +438,7 @@
         </div>
 
         <div class="foot-question">
-          <h4 class="h41">ASK FOR YOU CARREAR</h4>
+          <h4 class="h41">ASK FOR YOUR CARREAR</h4>
           <input
             type="text"
             name=""

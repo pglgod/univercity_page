@@ -9,9 +9,26 @@ function show_loader() {
     function () {
       document.getElementById("loader").style.display = "none";
     },
-    3000
+    2000
   )
 }
+
+// burger
+var burger = document.getElementById('burger');
+var burgerLable  = document.getElementById('burger_lable')
+var hamburgerMenu = document.getElementById('hamburger-manu');
+var screen_size = window.matchMedia("(max-width: 900px;)")
+
+function showHamburgerMenu(){
+  hamburgerMenu.style.top = "70px";
+
+}
+function hideHamburgerMenu() {
+  hamburgerMenu.style.top = "-100%"
+
+}
+
+
 
 
 
