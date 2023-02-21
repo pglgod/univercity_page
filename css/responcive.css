@@ -178,6 +178,9 @@
 @media (max-width: 775px) {
     .container-1 {
         flex-direction: column;
+        /* display: unset; */
+        justify-content: unset;
+        align-items: center;
 
     }
 
@@ -196,5 +199,63 @@
 
 
     }
+    .frequ-ask-que-cnt{
+        margin-left: 25px;
+    }
 
+}
+
+
+@media (max-width: 600px) {
+    .Awards{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 550px) {
+    
+    .call-cnt{
+        display: none;
+    }
+    
+
+    
+    .nav-cnt-0, .nav-cnt{
+        height: 100vh;
+    }
+    .poster-material{
+        width: 100vw;
+        position: relative;
+        left: 0;
+        top: 70%;
+        height: unset;
+        margin-top: unset;
+    }
+    .p1, .h21, .h22, .line-1, .p3{
+        display: none;
+    }
+    .line-2{
+        justify-content: center;
+        margin-top: unset;
+        margin-left: unset;
+        margin: auto;
+    }
+    
+    
+    
+    
+    .foot-content{
+        flex-direction: column;
+        /* align-items: center; */
+
+    }
+    .foot-question{
+        margin-left: unset;
+        order: -1;
+    }
+    .foot-address{
+        width: unset;
+        min-width: unset;
+    }
 }

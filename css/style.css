@@ -102,6 +102,14 @@ body {
 
 }
 
+.call-cnt-0{
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+
+
+
 /* hamburger */
 .burger {
     display: none;
@@ -763,7 +771,7 @@ body {
 
 .footer p {
     color: var(--bg-color);
-    font-size: 14px;
+    font-size: 8px;
     font-weight: 100;
     margin: 0 10px;
 }
