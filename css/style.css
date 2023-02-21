@@ -59,8 +59,11 @@ body {
     top: 65%;
     /* right: 28%; */
     padding: 10px 0;
-    background: linear-gradient(to right, #94c7fa, #5397db, #498dd1);
-    border: 1px solid var(--col-main);
+    /* background: linear-gradient(to right, #94c7fa, #5397db, #498dd1); */
+    
+    background: rgba(0, 0, 0, 0.668);
+    backdrop-filter: saturate(180%) blur(10px);
+    /* border: 1px solid var(--col-main); */
     border-radius: 7px;
 }
 
@@ -68,11 +71,15 @@ body {
     margin: 5px 8px;
 }
 
+.dropdown-item a, .all-dropdown a{
+    font-size: 15px;
+}
 .all-dropdown {
     margin: 5px 8px 0;
     /* border-left: 1px solid var(--col-main); */
-    border-bottom: 1px solid var(--col-main);;
+    /* border-bottom: 1px solid var(--col-main);; */
 }
+
 
 
 
@@ -229,7 +236,11 @@ body {
     position: absolute;
     top: -100%;
     left: 0;
-    background: linear-gradient(to right, #94c7fa, #5397db, #498dd1);
+    /* background: linear-gradient(to right, #94c7fa, #5397db, #498dd1); */
+    
+    background: rgba(0, 0, 0, 0.668);
+    backdrop-filter: saturate(180%) blur(10px);
+
     transition: 1s;   
 }
 /* .burger input:checked, .hamburger-munu-cnt{ */
