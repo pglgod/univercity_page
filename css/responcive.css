@@ -22,7 +22,7 @@
 
 @media (max-width: 1050px) {
 
-    .h33,
+    /* .h33,
     .h27 {
         font-size: 27px;
     }
@@ -49,7 +49,7 @@
     .h23,
     .h24 {
         font-size: 18px;
-    }
+    } 
 
     .p4 {
         font-size: 14px;
@@ -81,9 +81,9 @@
 
     .p5 {
         font-size: 14px;
-        /* line-height: 18px */
-    }
-
+        line-height: 18px;
+    }  
+    */
     .testimonial {
         max-width: 850px;
     }
@@ -141,6 +141,7 @@
 
     .hamburger-munu-cnt {
         display: unset;
+        z-index: 2;
     }
 
     .list-items {
@@ -155,16 +156,15 @@
 }
 
 @media (max-width: 800px) {
-    .practice-area-cards {
+    /* .practice-area-cards {
         display: grid;
         grid-template-columns: auto;
-
-    }
-
+    } */
+/* 
     .ix-defence-card,
     .voilation-card {
         margin: auto;
-    }
+    } */
 
     .foot-logo {
         display: none;
@@ -222,13 +222,13 @@
 
     
     .nav-cnt-0, .nav-cnt{
-        height: 100vh;
+        height: 30vh;
     }
     .poster-material{
         width: 100vw;
         position: relative;
         left: 0;
-        top: 70%;
+        top: 40%;
         height: unset;
         margin-top: unset;
     }

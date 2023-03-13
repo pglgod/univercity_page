@@ -369,7 +369,7 @@ body {
 
 
 .practice-area-cnt {
-    padding: 50px 25px;
+    padding: 50px 5px;
     background-color: var(--main-white);
 }
 
@@ -390,13 +390,15 @@ body {
 
 .practice-area-cards {
     margin-top: 25px;
+    overflow-y: scroll;
 }
 
 .ix-defence-card,
 .voilation-card {
 
     padding: 15px;
-    width: 250px;
+    min-width: 250px;
+    max-width: 250px;
     height: 250px;
     background-color: var(--bg-color);
 
@@ -437,7 +439,8 @@ body {
 }
 
 .academic-integrity-card {
-    width: 275px;
+    min-width: 275px;
+    max-width: 275px;
     height: 275px;
     padding: 15px;
     background: linear-gradient(to right, #94c7fa, #5397db, #498dd1);

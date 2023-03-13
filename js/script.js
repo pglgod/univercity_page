@@ -1,6 +1,6 @@
 
 
-alert("this webpage is made only for practice purpose...dont teke it seriously... and  this page is not sutaible for short screen devices, for better experience open this page on laptop or desktop || ");
+// alert("this webpage is made only for practice purpose...dont teke it seriously... and  this page is not sutaible for short screen devices, for better experience open this page on laptop or desktop || ")
 
 // loader
  
