@@ -42,6 +42,7 @@ body {
 .list-item a {
     font-size: 20px;
     color: var(--main-white);
+    cursor: pointer;
 }
 
 .list-item a:hover {
