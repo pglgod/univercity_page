@@ -166,6 +166,9 @@
         margin: auto;
     } */
 
+    . practice-area-cards{
+       justify-content: right;
+    }
     .foot-logo {
         display: none;
     }
